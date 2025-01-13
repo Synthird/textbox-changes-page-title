@@ -1,6 +1,6 @@
 # Textbox changes page title
 
-A textbox that changes the title of a page.
+A textbox that changes the title of a webpage.
 
 ## License
 
