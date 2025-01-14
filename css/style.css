@@ -14,6 +14,7 @@ p {
 
 code {
 	border-style: groove;
+	padding: 2px;
 }
 
 input {
