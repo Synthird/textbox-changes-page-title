@@ -4,6 +4,18 @@ body {
 	text-align: center;
 }
 
+button {
+	font-size: medium;
+}
+
+p {
+	line-height: 1.6;
+}
+
+code {
+	border-style: groove;
+}
+
 input {
 	font-size: large;
 }
