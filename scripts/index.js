@@ -1,6 +1,6 @@
 const title = document.getElementById("title");
 const changeTitle = document.getElementById("changeTitle");
-const titleCode = document.getElementById("htmlTitleCode");
+const titleCode = document.getElementById("htmlCode");
 const copyCode = document.getElementById("copyCode");
 const copyNotify = document.getElementById("copyNotify");
 
