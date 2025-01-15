@@ -15,6 +15,7 @@ function clearCopyNotify() {
 }
 
 setCodeToDefault();
+changeTitle.focus();
 
 changeTitle.onkeyup = function () {
 	if (!changeTitle.value.replaceAll(" ", "") == "") {
