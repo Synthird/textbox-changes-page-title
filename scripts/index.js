@@ -18,7 +18,7 @@ setCodeToDefault();
 changeTitle.focus();
 
 changeTitle.onkeyup = function () {
-	if (!changeTitle.value.replaceAll(" ", "") == "") {
+	if (changeTitle.value.replaceAll(" ", "") != "") {
 		title.textContent = changeTitle.value;
 		htmlCode.textContent = `<title>${changeTitle.value}</title>`
 	} else {
