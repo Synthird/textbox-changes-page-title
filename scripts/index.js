@@ -1,8 +1,8 @@
 const title = document.getElementById("title");
-const changeTitle = document.getElementById("changeTitle");
-const htmlCode = document.getElementById("htmlCode");
-const copyCode = document.getElementById("copyCode");
-const copyNotify = document.getElementById("copyNotify");
+const changeTitle = document.getElementById("change-title");
+const htmlCode = document.getElementById("html-code");
+const copyCode = document.getElementById("copy-code");
+const copyNotify = document.getElementById("copy-notify");
 
 const defaultTitle = title.textContent;
 
