@@ -17,7 +17,7 @@ function clearCopyNotify() {
 setCodeToDefault();
 changeTitle.focus();
 
-changeTitle.addEventListener("keyup", function () {
+changeTitle.addEventListener("keyup", () => {
 	if (changeTitle.value.replaceAll(" ", "") != "") {
 		title.textContent = changeTitle.value;
 		htmlCode.textContent = `<title>${changeTitle.value}</title>`
@@ -27,7 +27,7 @@ changeTitle.addEventListener("keyup", function () {
 	}
 })
 
-copyCode.addEventListener("click", function () {
+copyCode.addEventListener("click", () => {
 	navigator.clipboard.writeText(htmlCode.textContent);
 	copyNotify.textContent = "HTML code has been copied to clipboard!";
 	setTimeout(clearCopyNotify, 1300);
