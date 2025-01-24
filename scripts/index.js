@@ -17,7 +17,7 @@ function clearCopyNotify() {
 setCodeToDefault();
 changeTitle.focus();
 
-changeTitle.onkeyup = function () {
+changeTitle.addEventListener("keyup", function () {
 	if (changeTitle.value.replaceAll(" ", "") != "") {
 		title.textContent = changeTitle.value;
 		htmlCode.textContent = `<title>${changeTitle.value}</title>`
@@ -25,10 +25,10 @@ changeTitle.onkeyup = function () {
 		title.textContent = defaultTitle;
 		setCodeToDefault();
 	}
-}
+})
 
-copyCode.onclick = function () {
+copyCode.addEventListener("click", function () {
 	navigator.clipboard.writeText(htmlCode.textContent);
 	copyNotify.textContent = "HTML code has been copied to clipboard!";
 	setTimeout(clearCopyNotify, 1300);
-}
+})
