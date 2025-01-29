@@ -6,6 +6,12 @@ const copyNotify = document.getElementById("copy-notify");
 
 const defaultTitle = title.textContent;
 
+function copyHTMLCode() {
+	navigator.clipboard.writeText(htmlCode.textContent);
+	copyNotify.textContent = "HTML code has been copied to clipboard!";
+	setTimeout(clearCopyNotify, 1300);
+}
+
 function setCodeToDefault() {
 	htmlCode.textContent = `<title>${defaultTitle}</title>`;
 }
@@ -17,7 +23,7 @@ function clearCopyNotify() {
 setCodeToDefault();
 changeTitle.focus();
 
-changeTitle.addEventListener("keyup", () => {
+changeTitle.addEventListener("keyup", event => {
 	if (changeTitle.value.replaceAll(" ", "") != "") {
 		title.textContent = changeTitle.value;
 		htmlCode.textContent = `<title>${changeTitle.value}</title>`
@@ -25,10 +31,10 @@ changeTitle.addEventListener("keyup", () => {
 		title.textContent = defaultTitle;
 		setCodeToDefault();
 	}
-})
 
-copyCode.addEventListener("click", () => {
-	navigator.clipboard.writeText(htmlCode.textContent);
-	copyNotify.textContent = "HTML code has been copied to clipboard!";
-	setTimeout(clearCopyNotify, 1300);
-})
+	if (event.key === "Enter") {
+		copyHTMLCode();
+	}
+});
+
+copyCode.addEventListener("click", copyHTMLCode);
