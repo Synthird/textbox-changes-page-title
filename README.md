@@ -2,7 +2,7 @@
 
 A textbox that changes the title of a webpage.
 
-You play around with it by [clicking here](https://synthird.github.io/textbox-changes-page-title).
+You play around with it [here](https://synthird.github.io/textbox-changes-page-title).
 
 ## License
 
