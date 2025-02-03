@@ -6,7 +6,7 @@ body, button, code, input {
 }
 
 button, code, input {
-	border: 2px solid rgb(170, 170, 170);
+	border: 0.14em solid rgb(170, 170, 170);
 }
 
 /* Modifying individual elements */
