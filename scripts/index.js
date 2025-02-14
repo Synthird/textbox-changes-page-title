@@ -24,7 +24,7 @@ setCodeToDefault();
 changeTitle.focus();
 
 changeTitle.addEventListener("keyup", event => {
-	if (changeTitle.value.replaceAll(" ", "") != "") {
+	if (changeTitle.value.replaceAll(" ", "") !== "") {
 		title.textContent = changeTitle.value;
 		htmlCode.textContent = `<title>${changeTitle.value}</title>`
 	} else {
