@@ -1,3 +1,7 @@
+:root {
+	--border-radius: 0.3em;
+}
+
 /* Modifying multiple elements */
 
 body, button, code, input {
@@ -27,14 +31,14 @@ code {
 
 input {
 	padding: 0.15%;
-	border-radius: 0.3em;
+	border-radius: var(--border-radius);
 	font-size: x-large;
 }
 
 /* Button */
 
 button {
-	border-radius: 0.3em;
+	border-radius: var(--border-radius);
 	padding: 0.1em 0.5em;
 	font-size: large;
 }
