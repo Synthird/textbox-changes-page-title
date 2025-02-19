@@ -6,18 +6,18 @@ const copyNotify = document.getElementById("copy-notify");
 
 const defaultTitle = title.textContent;
 
-function copyHTMLCode() {
-	navigator.clipboard.writeText(htmlCode.textContent);
-	copyNotify.textContent = "HTML code has been copied to clipboard!";
-	setTimeout(clearCopyNotify, 1300);
-}
-
 function setCodeToDefault() {
 	htmlCode.textContent = `<title>${defaultTitle}</title>`;
 }
 
 function clearCopyNotify() {
 	copyNotify.textContent = "";
+}
+
+function copyHTMLCode() {
+	navigator.clipboard.writeText(htmlCode.textContent);
+	copyNotify.textContent = "HTML code has been copied to clipboard!";
+	setTimeout(clearCopyNotify, 1300);
 }
 
 setCodeToDefault();
