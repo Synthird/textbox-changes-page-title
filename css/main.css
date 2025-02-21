@@ -21,6 +21,10 @@ body {
 	text-align: center;
 }
 
+h2 {
+	margin-bottom: 0.33em;
+}
+
 p {
 	line-height: 1.6;
 }
@@ -41,6 +45,7 @@ button {
 	border-radius: var(--border-radius);
 	padding: 0.1em 0.5em;
 	font-size: large;
+	margin-top: 0.82em;
 }
 
 button:hover {
