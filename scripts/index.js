@@ -6,6 +6,8 @@ const copyNotify = document.getElementById("copy-notify");
 
 const defaultTitle = title.textContent;
 
+// Functions
+
 function setHTMLCode(pageTitle) {
 	htmlCode.textContent = `<title>${pageTitle}</title>`;
 
@@ -27,6 +29,8 @@ function copyHTMLCode() {
 	copyNotify.textContent = "HTML code has been copied to clipboard!";
 	setTimeout(clearCopyNotify, 1300);
 }
+
+// Setup and event listeners
 
 setCodeToDefault();
 changeTitle.focus();
