@@ -6,8 +6,16 @@ const copyNotify = document.getElementById("copy-notify");
 
 const defaultTitle = title.textContent;
 
+function setHTMLCode(pageTitle) {
+	htmlCode.textContent = `<title>${pageTitle}</title>`;
+
+	if (title.textContent !== pageTitle) {
+		title.textContent = pageTitle;
+	}
+}
+
 function setCodeToDefault() {
-	htmlCode.textContent = `<title>${defaultTitle}</title>`;
+	setHTMLCode(defaultTitle);
 }
 
 function clearCopyNotify() {
@@ -25,10 +33,8 @@ changeTitle.focus();
 
 changeTitle.addEventListener("keyup", event => {
 	if (changeTitle.value.replaceAll(" ", "") !== "") {
-		title.textContent = changeTitle.value;
-		htmlCode.textContent = `<title>${changeTitle.value}</title>`
+		setHTMLCode(changeTitle.value);
 	} else {
-		title.textContent = defaultTitle;
 		setCodeToDefault();
 	}
 
