@@ -33,7 +33,6 @@ function copyHTMLCode() {
 // Setup and event listeners
 
 setCodeToDefault();
-changeTitle.focus();
 
 changeTitle.addEventListener("keyup", event => {
 	if (changeTitle.value.replaceAll(" ", "") !== "") {
