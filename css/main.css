@@ -1,12 +1,13 @@
 :root {
 	--border-radius: 0.3em;
+	--text-colour: rgb(248, 248, 248);
 }
 
 /* Modifying multiple elements */
 
 body, button, code, input {
 	background-color: rgb(29, 29, 29);
-	color: rgb(248, 248, 248);
+	color: var(--text-colour)
 }
 
 button, code, input {
@@ -37,6 +38,22 @@ input {
 	padding: 0.15%;
 	border-radius: var(--border-radius);
 	font-size: x-large;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+/* a tag/selector */
+
+a {
+	color: var(--text-colour);
+}
+
+a:active {
+	color: rgb(151, 151, 151);
 }
 
 /* Button */
