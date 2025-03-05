@@ -35,14 +35,19 @@ function copyHTMLCode() {
 setCodeToDefault();
 
 changeTitle.addEventListener("keyup", event => {
-	if (changeTitle.value.replaceAll(" ", "") !== "") {
-		setHTMLCode(changeTitle.value);
-	} else {
-		setCodeToDefault();
+	switch(changeTitle.value.replaceAll(" ", "")) {
+		case "":
+			setCodeToDefault();
+			break;
+		default:
+			setHTMLCode(changeTitle.value);
+			break;
 	}
 
-	if (event.key === "Enter") {
-		copyHTMLCode();
+	switch(event.key) {
+		case "Enter":
+			copyHTMLCode();
+			break;
 	}
 });
 
