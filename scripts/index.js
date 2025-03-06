@@ -35,7 +35,7 @@ function copyHTMLCode() {
 setCodeToDefault();
 
 changeTitle.addEventListener("keyup", event => {
-	switch(changeTitle.value.replaceAll(" ", "")) {
+	switch (changeTitle.value.replaceAll(" ", "")) {
 		case "":
 			setCodeToDefault();
 			break;
@@ -44,7 +44,7 @@ changeTitle.addEventListener("keyup", event => {
 			break;
 	}
 
-	switch(event.key) {
+	switch (event.key) {
 		case "Enter":
 			copyHTMLCode();
 			break;
