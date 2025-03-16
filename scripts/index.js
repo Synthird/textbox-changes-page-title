@@ -1,8 +1,10 @@
 const title = document.getElementById("title");
 const changeTitle = document.getElementById("change-title");
 const htmlCode = document.getElementById("html-code");
-const copyCode = document.getElementById("copy-code");
 const copyNotify = document.getElementById("copy-notify");
+
+const copyCode = document.getElementById("copy-code");
+const clearTextbox = document.getElementById("clear-textbox");
 
 const defaultTitle = title.textContent;
 
@@ -49,6 +51,11 @@ changeTitle.addEventListener("keyup", event => {
 			copyHTMLCode();
 			break;
 	}
+});
+
+clearTextbox.addEventListener("click", () => {
+	changeTitle.value = "";
+	setCodeToDefault();
 });
 
 copyCode.addEventListener("click", copyHTMLCode);
