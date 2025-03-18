@@ -28,7 +28,7 @@ function clearCopyNotify() {
 
 function copyHTMLCode() {
 	navigator.clipboard.writeText(htmlCode.textContent);
-	copyNotify.textContent = "HTML code has been copied to clipboard!";
+	copyNotify.textContent = "Copied HTML code to clipboard!";
 	setTimeout(clearCopyNotify, 1300);
 }
 
