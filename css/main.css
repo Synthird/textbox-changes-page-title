@@ -12,6 +12,7 @@ body, button, code, input {
 
 button, code, input {
 	border: 2px solid rgb(170, 170, 170);
+	border-radius: var(--border-radius);
 }
 
 /* Modifying individual elements */
@@ -36,7 +37,6 @@ code {
 
 input {
 	padding: 0.15%;
-	border-radius: var(--border-radius);
 	font-size: x-large;
 }
 
@@ -59,7 +59,6 @@ a:active {
 /* Button */
 
 button {
-	border-radius: var(--border-radius);
 	padding: 0.1em 0.5em;
 	font-size: large;
 	margin-top: 0.82em;
