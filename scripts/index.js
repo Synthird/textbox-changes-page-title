@@ -1,11 +1,15 @@
-const title = document.getElementById("title");
-const changeTitle = document.getElementById("change-title");
-const htmlCode = document.getElementById("html-code");
+// Selectors
+const title = document.querySelector("title");
+const changeTitle = document.querySelector("input[type='text']");
+const htmlCode = document.querySelector("code");
+
 const copyNotify = document.getElementById("copy-notify");
 
+// Buttons
 const copyCode = document.getElementById("copy-code");
 const clearTextbox = document.getElementById("clear-textbox");
 
+// Values
 const defaultTitle = title.textContent;
 
 // Functions
