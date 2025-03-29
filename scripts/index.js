@@ -14,6 +14,12 @@ const defaultTitle = title.textContent;
 
 // Functions
 
+function clearCopyNotify() {
+	copyNotify.textContent = "";
+}
+
+// HTML code functions
+
 function setHTMLCode(pageTitle) {
 	htmlCode.textContent = `<title>${pageTitle}</title>`;
 
@@ -24,10 +30,6 @@ function setHTMLCode(pageTitle) {
 
 function setCodeToDefault() {
 	setHTMLCode(defaultTitle);
-}
-
-function clearCopyNotify() {
-	copyNotify.textContent = "";
 }
 
 function copyHTMLCode() {
