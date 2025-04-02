@@ -37,7 +37,7 @@ function copyHTMLCode() {
 
 // Event listeners
 
-changeTitle.addEventListener("input", event => {
+changeTitle.addEventListener("keyup", event => {
 	switch (changeTitle.value.replaceAll(" ", "")) {
 		case "":
 			setCodeToDefault();
