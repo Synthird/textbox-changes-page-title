@@ -57,6 +57,7 @@ changeTitle.addEventListener("keyup", event => {
 clearTextbox.addEventListener("click", () => {
 	changeTitle.value = "";
 	setCodeToDefault();
+	changeTitle.focus();
 });
 
 copyCode.addEventListener("click", copyHTMLCode);
