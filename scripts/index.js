@@ -21,11 +21,8 @@ function clearCopyNotify() {
 // HTML code functions
 
 function setHTMLCode(pageTitle) {
+	title.textContent = pageTitle;
 	htmlCode.textContent = `<title>${pageTitle}</title>`;
-
-	if (title.textContent !== pageTitle) {
-		title.textContent = pageTitle;
-	}
 }
 
 function setCodeToDefault() {
@@ -38,11 +35,9 @@ function copyHTMLCode() {
 	setTimeout(clearCopyNotify, 1300);
 }
 
-// Setup and event listeners
+// Event listeners
 
-setCodeToDefault();
-
-changeTitle.addEventListener("keyup", event => {
+changeTitle.addEventListener("input", event => {
 	switch (changeTitle.value.replaceAll(" ", "")) {
 		case "":
 			setCodeToDefault();
