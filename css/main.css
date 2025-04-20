@@ -23,7 +23,7 @@ body {
 }
 
 h2 {
-	margin-bottom: 0.33em;
+	margin: 0.33em 0;
 }
 
 a:active {
@@ -50,7 +50,6 @@ footer {
 button {
 	padding: 0.1em 0.5em;
 	font-size: large;
-	margin-top: 0.82em;
 }
 
 button:hover {
