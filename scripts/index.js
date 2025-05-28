@@ -3,17 +3,14 @@ const changeTitle = document.querySelector("input[type='text']");
 const htmlCode = document.querySelector("code");
 const copyNotify = document.getElementById("copy-notify");
 
-const defaultTitle = title.textContent;
-
-// Buttons
 const copyCode = document.getElementById("copy-code");
 const clearTextbox = document.getElementById("clear-textbox");
+
+const defaultTitle = title.textContent;
 
 function clearCopyNotify() {
 	copyNotify.textContent = "";
 }
-
-// HTML code functions
 
 function setHTMLCode(pageTitle) {
 	title.textContent = pageTitle;
@@ -29,8 +26,6 @@ function copyHTMLCode() {
 	copyNotify.textContent = "Copied HTML code to clipboard!";
 	setTimeout(clearCopyNotify, 1300);
 }
-
-// Event listeners
 
 changeTitle.addEventListener("keyup", event => {
 	switch (changeTitle.value.replaceAll(" ", "")) {
