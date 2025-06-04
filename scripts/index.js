@@ -1,10 +1,10 @@
 const title = document.querySelector("title");
 const changeTitle = document.querySelector("input[type='text']");
 const htmlCode = document.querySelector("code");
-const copyNotify = document.getElementById("copy-notify");
 
 const copyCode = document.getElementById("copy-code");
 const clearTextbox = document.getElementById("clear-textbox");
+const copyNotify = document.getElementById("copy-notify");
 
 const defaultTitle = title.textContent;
 
