@@ -1,12 +1,12 @@
-const title = document.querySelector("title");
-const changeTitle = document.querySelector("input[type='text']");
-const htmlCode = document.querySelector("code");
+const title = document.querySelector("title"),
+	changeTitle = document.querySelector("input[type='text']"),
+	htmlCode = document.querySelector("code"),
 
-const copyCode = document.getElementById("copy-code");
-const clearTextbox = document.getElementById("clear-textbox");
-const copyNotify = document.getElementById("copy-notify");
+	copyCode = document.getElementById("copy-code"),
+	clearTextbox = document.getElementById("clear-textbox"),
+	copyNotify = document.getElementById("copy-notify"),
 
-const defaultTitle = title.textContent;
+	defaultTitle = title.textContent;
 
 function clearCopyNotify() {
 	copyNotify.textContent = "";
