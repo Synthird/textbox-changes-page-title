@@ -37,6 +37,7 @@ code {
 input {
 	padding: 0.15%;
 	font-size: x-large;
+	margin-bottom: 0.1em;
 }
 
 footer {
