@@ -1,3 +1,7 @@
+:root {
+	--oneTenthEm: 0.1em;
+}
+
 /* Modifying multiple elements */
 
 body, button, input {
@@ -38,10 +42,15 @@ code {
 	padding: 0.1%;
 }
 
+label {
+	display: block;
+	margin-bottom: 0.23em;
+}
+
 input {
 	padding: 0.15%;
 	font-size: x-large;
-	margin-bottom: 0.1em;
+	margin-bottom: var(--oneTenthEm);
 }
 
 footer {
@@ -53,7 +62,7 @@ footer {
 /* Button */
 
 button {
-	padding: 0.1em 0.5em;
+	padding: var(--oneTenthEm) 0.5em;
 	font-size: large;
 }
 

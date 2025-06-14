@@ -1,7 +1,7 @@
 const title = document.querySelector("title"),
-	changeTitle = document.querySelector("input[type='text']"),
 	htmlCode = document.querySelector("code"),
 
+	changeTitle = document.getElementById("textbox"),
 	copyCode = document.getElementById("copy-code"),
 	clearTextbox = document.getElementById("clear-textbox"),
 	copyNotify = document.getElementById("copy-notify"),
