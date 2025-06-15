@@ -1,5 +1,5 @@
 const title = document.querySelector("title"),
-	faviconDisplay = document.querySelector("link[rel='shortcut icon']"),
+	favicon = document.querySelector("link[rel='shortcut icon']"),
 	htmlCode = document.querySelector("code"),
 
 	changeTitle = document.getElementById("textbox"),
@@ -53,7 +53,7 @@ clearTextbox.addEventListener("click", () => {
 });
 
 uploadFavicon.addEventListener("change", event => {
-	faviconDisplay.setAttribute("href", URL.createObjectURL(event.target.files[0]));
+	favicon.setAttribute("href", URL.createObjectURL(event.target.files[0]));
 });
 
 copyCode.addEventListener("click", copyHTMLCode);
