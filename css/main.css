@@ -64,6 +64,7 @@ footer {
 button {
 	padding: var(--oneTenthEm) 0.5em;
 	font-size: large;
+	margin-bottom: 1em;
 }
 
 button:hover {

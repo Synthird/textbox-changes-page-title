@@ -1,10 +1,12 @@
 const title = document.querySelector("title"),
+	faviconDisplay = document.querySelector("link[rel='shortcut icon']"),
 	htmlCode = document.querySelector("code"),
 
 	changeTitle = document.getElementById("textbox"),
 	copyCode = document.getElementById("copy-code"),
 	clearTextbox = document.getElementById("clear-textbox"),
 	copyNotify = document.getElementById("copy-notify"),
+	uploadFavicon = document.getElementById("test-favicon"),
 
 	defaultTitle = title.textContent;
 
@@ -48,6 +50,10 @@ clearTextbox.addEventListener("click", () => {
 	changeTitle.value = "";
 	setCodeToDefault();
 	changeTitle.focus();
+});
+
+uploadFavicon.addEventListener("change", event => {
+	faviconDisplay.setAttribute("href", URL.createObjectURL(event.target.files[0]));
 });
 
 copyCode.addEventListener("click", copyHTMLCode);
