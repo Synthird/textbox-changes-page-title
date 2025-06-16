@@ -6,7 +6,7 @@ const title = document.querySelector("title"),
 	copyCode = document.getElementById("copy-code"),
 	clearTextbox = document.getElementById("clear-textbox"),
 	copyNotify = document.getElementById("copy-notify"),
-	uploadFavicon = document.getElementById("test-favicon"),
+	addFavicon = document.getElementById("add-favicon"),
 
 	defaultTitle = title.textContent;
 
@@ -52,7 +52,7 @@ clearTextbox.addEventListener("click", () => {
 	changeTitle.focus();
 });
 
-uploadFavicon.addEventListener("change", event => {
+addFavicon.addEventListener("change", event => {
 	favicon.setAttribute("href", URL.createObjectURL(event.target.files[0]));
 });
 
