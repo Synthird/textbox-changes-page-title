@@ -2,7 +2,7 @@ const title = document.querySelector("title"),
 	favicon = document.querySelector("link[rel='shortcut icon']"),
 	htmlCode = document.querySelector("code"),
 
-	changeTitle = document.getElementById("textbox"),
+	textbox = document.getElementById("textbox"),
 	copyCode = document.getElementById("copy-code"),
 	clearTextbox = document.getElementById("clear-textbox"),
 	copyNotify = document.getElementById("copy-notify"),
@@ -29,13 +29,13 @@ function copyHTMLCode() {
 	setTimeout(clearCopyNotify, 1300);
 }
 
-changeTitle.addEventListener("keyup", event => {
-	switch (changeTitle.value.replaceAll(" ", "")) {
+textbox.addEventListener("keyup", event => {
+	switch (textbox.value.replaceAll(" ", "")) {
 		case "":
 			setCodeToDefault();
 			break;
 		default:
-			setHTMLCode(changeTitle.value);
+			setHTMLCode(textbox.value);
 			break;
 	}
 
@@ -47,9 +47,9 @@ changeTitle.addEventListener("keyup", event => {
 });
 
 clearTextbox.addEventListener("click", () => {
-	changeTitle.value = "";
+	textbox.value = "";
 	setCodeToDefault();
-	changeTitle.focus();
+	textbox.focus();
 });
 
 addFavicon.addEventListener("change", event => {
