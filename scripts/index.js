@@ -3,8 +3,7 @@ const title = document.querySelector("title"),
 	htmlCode = document.querySelector("code"),
 
 	textbox = document.getElementById("textbox"),
-	copyCode = document.getElementById("copy-code"),
-	clearTextbox = document.getElementById("clear-textbox"),
+	buttons = document.getElementById("buttons"),
 	copyNotify = document.getElementById("copy-notify"),
 	addFavicon = document.getElementById("add-favicon"),
 
@@ -46,14 +45,19 @@ textbox.addEventListener("keyup", event => {
 	}
 });
 
-clearTextbox.addEventListener("click", () => {
-	textbox.value = "";
-	setCodeToDefault();
-	textbox.focus();
+buttons.addEventListener("click", event => {
+	switch (event.target.getAttribute("id")) {
+		case "copy-code":
+			copyHTMLCode();
+			break;
+		case "clear-textbox":
+			textbox.value = "";
+			setCodeToDefault();
+			textbox.focus();
+			break;
+	}
 });
 
 addFavicon.addEventListener("change", event => {
 	favicon.setAttribute("href", URL.createObjectURL(event.target.files[0]));
 });
-
-copyCode.addEventListener("click", copyHTMLCode);
