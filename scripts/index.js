@@ -46,11 +46,11 @@ textbox.addEventListener("keyup", event => {
 });
 
 buttons.addEventListener("click", event => {
-	switch (event.target.getAttribute("id")) {
-		case "copy-code":
+	switch (event.target.textContent) {
+		case "Copy code":
 			copyHTMLCode();
 			break;
-		case "clear-textbox":
+		case "Clear textbox":
 			textbox.value = "";
 			setCodeToDefault();
 			textbox.focus();
