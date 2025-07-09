@@ -5,9 +5,7 @@ const title = document.querySelector("title"),
 	textbox = document.getElementById("textbox"),
 	buttons = document.getElementById("buttons"),
 	copyNotify = document.getElementById("copy-notify"),
-	addFavicon = document.getElementById("add-favicon"),
-
-	defaultTitle = title.textContent;
+	addFavicon = document.getElementById("add-favicon");
 
 function clearCopyNotify() {
 	copyNotify.textContent = "";
@@ -19,7 +17,7 @@ function setHTMLCode(pageTitle) {
 }
 
 function setCodeToDefault() {
-	setHTMLCode(defaultTitle);
+	setHTMLCode("Textbox changes page title");
 }
 
 function copyHTMLCode() {
