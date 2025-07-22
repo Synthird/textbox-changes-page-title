@@ -23,7 +23,7 @@ body {
 }
 
 h2 {
-	margin: -0.05em 0 0.33em 0;
+	margin: -0.4em 0 0.33em 0;
 }
 
 a {
@@ -56,7 +56,7 @@ footer {
 
 /* Button */
 
-button, input[type="file"] {
+button, input[type="file"], input::file-selector-button {
 	padding: 0.1em 0.5em;
 	font-size: large;
 	margin-bottom: 1em;
