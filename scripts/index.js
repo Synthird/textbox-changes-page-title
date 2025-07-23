@@ -7,8 +7,6 @@ const title = document.querySelector("title"),
 	copyNotify = document.getElementById("copy-notify"),
 	addFavicon = document.getElementById("add-favicon");
 
-let faviconURL;
-
 function clearCopyNotify() {
 	copyNotify.textContent = "";
 }
@@ -59,10 +57,6 @@ buttons.addEventListener("click", event => {
 });
 
 addFavicon.addEventListener("change", event => {
-	if (faviconURL !== null) {
-		URL.revokeObjectURL(faviconURL);
-		faviconURL = URL.createObjectURL(event.target.files[0]);
-	}
-
-	favicon.setAttribute("href", faviconURL);
+	URL.revokeObjectURL(favicon.getAttribute("href"));
+	favicon.setAttribute("href", URL.createObjectURL(event.target.files[0]));
 });
