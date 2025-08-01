@@ -7,10 +7,6 @@ const title = document.querySelector("title"),
 	copyNotify = document.getElementById("copy-notify"),
 	addFavicon = document.getElementById("add-favicon");
 
-function clearCopyNotify() {
-	copyNotify.textContent = "";
-}
-
 function setHTMLCode(pageTitle) {
 	title.textContent = pageTitle;
 	htmlCode.textContent = `<title>${pageTitle}</title>`;
@@ -23,7 +19,7 @@ function setCodeToDefault() {
 function copyHTMLCode() {
 	navigator.clipboard.writeText(htmlCode.textContent);
 	copyNotify.textContent = "Copied HTML code to clipboard!";
-	setTimeout(clearCopyNotify, 1300);
+	setTimeout(() => copyNotify.textContent = "", 1300);
 }
 
 textbox.addEventListener("keyup", event => {
