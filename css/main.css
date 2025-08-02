@@ -38,8 +38,7 @@ code {
 	padding: 0.1%;
 }
 
-label {
-	display: block;
+div:has(label) {
 	margin-bottom: 0.27em;
 }
 
