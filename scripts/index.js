@@ -3,17 +3,13 @@ const title = document.querySelector("title"),
 	htmlCode = document.querySelector("code"),
 
 	textbox = document.getElementById("textbox"),
-	buttons = document.getElementById("buttons"),
+	copyCode = document.getElementById("copy-code"),
 	copyNotify = document.getElementById("copy-notify"),
 	addFavicon = document.getElementById("add-favicon");
 
 function setHTMLCode(pageTitle) {
 	title.textContent = pageTitle;
 	htmlCode.textContent = `<title>${pageTitle}</title>`;
-}
-
-function setCodeToDefault() {
-	setHTMLCode("Textbox changes page title");
 }
 
 function copyHTMLCode() {
@@ -25,7 +21,7 @@ function copyHTMLCode() {
 textbox.addEventListener("keyup", event => {
 	switch (textbox.value.replaceAll(" ", "")) {
 		case "":
-			setCodeToDefault();
+			setHTMLCode("Textbox changes page title");
 			break;
 		default:
 			setHTMLCode(textbox.value);
@@ -39,18 +35,7 @@ textbox.addEventListener("keyup", event => {
 	}
 });
 
-buttons.addEventListener("click", event => {
-	switch (event.target.textContent) {
-		case "Copy code":
-			copyHTMLCode();
-			break;
-		case "Clear textbox":
-			textbox.value = "";
-			setCodeToDefault();
-			textbox.focus();
-			break;
-	}
-});
+copyCode.addEventListener("click", copyHTMLCode);
 
 addFavicon.addEventListener("change", event => {
 	URL.revokeObjectURL(favicon.getAttribute("href"));
