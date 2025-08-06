@@ -3,7 +3,7 @@ const title = document.querySelector("title"),
 	htmlCode = document.querySelector("code"),
 
 	textbox = document.getElementById("textbox"),
-	copyCode = document.getElementById("copy-code"),
+	copyCode = document.querySelector("button"),
 	copyNotify = document.getElementById("copy-notify"),
 	addFavicon = document.getElementById("add-favicon");
 
