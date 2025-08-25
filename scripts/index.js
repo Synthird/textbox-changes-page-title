@@ -13,18 +13,20 @@ function setHTMLCode(pageTitle) {
 }
 
 function copyHTMLCode() {
-	navigator.clipboard.writeText(htmlCode.textContent);
+	navigator.clipboard.writeText(htmlCode.innerText);
 	copyNotify.textContent = "Copied HTML code to clipboard!";
 	setTimeout(() => copyNotify.textContent = "", 1300);
 }
 
 textbox.addEventListener("keyup", event => {
-	switch (textbox.value.replaceAll(" ", "")) {
+	const text = textbox.value;
+
+	switch (text) {
 		case "":
 			setHTMLCode("Textbox changes page title");
 			break;
 		default:
-			setHTMLCode(textbox.value);
+			setHTMLCode(text);
 			break;
 	}
 
