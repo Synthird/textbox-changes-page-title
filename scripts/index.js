@@ -38,7 +38,6 @@ textbox.addEventListener("keyup", event => {
 });
 
 copyCode.addEventListener("click", copyHTMLCode);
-
 addFavicon.addEventListener("change", event => {
 	URL.revokeObjectURL(favicon.getAttribute("href"));
 	favicon.setAttribute("href", URL.createObjectURL(event.target.files[0]));
