@@ -47,6 +47,10 @@ input {
 	font-size: x-large;
 }
 
+[id="copy-notify"] {
+	display: none;
+}
+
 footer {
 	position: fixed;
 	bottom: 0;
