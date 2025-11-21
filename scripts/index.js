@@ -14,7 +14,6 @@ function setHTMLCode(pageTitle) {
 
 function copyHTMLCode() {
 	navigator.clipboard.writeText(htmlCode.innerText);
-	//copyNotify.textContent = "Copied HTML code to clipboard!";
 	copyNotify.style.display = "block";
 	setTimeout(() => copyNotify.style.display = "none", 1300);
 }
