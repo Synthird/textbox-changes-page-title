@@ -1,6 +1,7 @@
 const title = document.querySelector("title"),
 	favicon = document.querySelector("link[rel='shortcut icon']"),
 	htmlCode = document.querySelector("code"),
+	titleText = document.getElementById("title-text"),
 
 	textbox = document.getElementById("textbox"),
 	copyCode = document.querySelector("button"),
@@ -9,7 +10,7 @@ const title = document.querySelector("title"),
 
 function setHTMLCode(pageTitle) {
 	title.textContent = pageTitle;
-	htmlCode.textContent = `<title>${pageTitle}</title>`;
+	titleText.textContent = pageTitle;
 }
 
 function copyHTMLCode() {
