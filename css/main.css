@@ -34,10 +34,6 @@ a:active {
 	text-decoration: none;
 }
 
-code {
-	padding: 0.1%;
-}
-
 div:has(label) {
 	margin-bottom: 0.27em;
 }
@@ -71,4 +67,14 @@ button:hover, ::file-selector-button:hover {
 
 button:active, ::file-selector-button:active {
 	background-color: rgb(51, 51, 51);
+}
+
+/* Code block */
+
+code {
+	padding: 0.1%;
+}
+
+.tag {
+	color: rgb(255, 89, 89);
 }
