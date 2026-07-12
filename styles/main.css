@@ -55,6 +55,7 @@ div:has(label) {
 input[type="text"] {
 	font-family: monospace;
 	font-size: xx-large;
+	width: 17em;
 }
 
 [id="copy-notify"] {
