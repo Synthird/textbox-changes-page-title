@@ -6,7 +6,9 @@ const title = document.querySelector("title"),
 	textbox = document.getElementById("textbox"),
 	copyCode = document.querySelector("button"),
 	copyNotify = document.getElementById("copy-notify"),
-	addFavicon = document.getElementById("add-favicon");
+	addFavicon = document.getElementById("add-favicon"),
+	
+	clipboard = navigator.clipboard;
 
 function setHTMLCode(pageTitle) {
 	title.textContent = pageTitle;
@@ -14,7 +16,7 @@ function setHTMLCode(pageTitle) {
 }
 
 function copyHTMLCode() {
-	navigator.clipboard.writeText(htmlCode.innerText);
+	clipboard.writeText(htmlCode.innerText);
 	copyNotify.style.display = "block";
 	setTimeout(() => copyNotify.style.display = "none", 1300);
 }
