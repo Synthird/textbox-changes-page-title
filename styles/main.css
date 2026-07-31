@@ -80,11 +80,11 @@ button, ::file-selector-button {
 	margin-bottom: 1em;
 }
 
-button:hover, ::file-selector-button:hover {
+button:hover, ::file-selector-button:hover, div:has(label[for="add-favicon"]:hover) ::file-selector-button {
 	background-color: rgb(80, 80, 80);
 }
 
-button:active, ::file-selector-button:active {
+button:active, ::file-selector-button:active, div:has(label[for="add-favicon"]:active) ::file-selector-button {
 	background-color: rgb(51, 51, 51);
 }
 
