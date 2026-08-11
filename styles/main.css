@@ -18,6 +18,10 @@ body, button, input[type="text"], ::file-selector-button {
 	color: rgb(248, 248, 248);
 }
 
+div:has(label), .html-code-label {
+	margin-bottom: 0.34em;
+}
+
 button, input[type="text"], ::file-selector-button, code {
 	border-radius: 0.3em;
 }
@@ -48,8 +52,8 @@ a:active {
 	border: 2px solid var(--link-colour);
 }
 
-div:has(label) {
-	margin-bottom: 0.34em;
+.html-code-label {
+	display: block;
 }
 
 input[type="text"] {
