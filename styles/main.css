@@ -41,10 +41,14 @@ body {
 
 a {
 	color: var(--link-colour);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 a:active {
-	text-decoration: none;
 	border: 2px solid var(--link-colour);
 }
 
