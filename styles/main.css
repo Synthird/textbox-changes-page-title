@@ -1,6 +1,5 @@
 :root {
 	--background-colour: rgb(26, 26, 26);
-	--link-colour: rgb(172, 195, 242);
 }
 
 ::selection {
@@ -40,7 +39,7 @@ body {
 }
 
 a {
-	color: var(--link-colour);
+	color: rgb(172, 195, 242);
 	text-decoration: none;
 }
 
@@ -49,7 +48,7 @@ a:hover {
 }
 
 a:active {
-	border: 2px solid var(--link-colour);
+	border: 2px solid;
 }
 
 div:has(label, .html-code-label) {
