@@ -96,3 +96,10 @@ button:active, div:has(label[for="add-favicon"]:active, input[type="file"]:activ
 .tag {
 	color: rgb(255, 75, 75);
 }
+
+/* Hiding specific elements if JavaScript is disabled */
+@media (scripting: none) {
+	div:has(input, label, p, button) {
+		display: none;
+	}
+}
