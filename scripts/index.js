@@ -4,7 +4,7 @@ const title = document.querySelector("title"),
 	titleText = document.getElementById("title-text"),
 
 	textbox = document.getElementById("textbox"),
-	copyCodeButton = document.getElementById("copy-button"),
+	copyButton = document.getElementById("copy-button"),
 	copyIcon = document.querySelector(".copy-icon"),
 	copyNotify = document.getElementById("copy-notify"),
 	addFavicon = document.getElementById("add-favicon"),
@@ -41,7 +41,7 @@ textbox.addEventListener("keyup", event => {
 	}
 });
 
-copyCodeButton.addEventListener("click", copyHTMLCode);
+copyButton.addEventListener("click", copyHTMLCode);
 copyIcon.addEventListener("click", copyHTMLCode);
 addFavicon.addEventListener("change", event => {
 	URL.revokeObjectURL(favicon.href);
