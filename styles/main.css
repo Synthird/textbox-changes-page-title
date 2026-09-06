@@ -113,7 +113,7 @@ code {
 
 /* Hiding specific elements if JavaScript is disabled */
 @media (scripting: none) {
-	div:has(input, label, p, button) {
+	div:has(input, label, p, button), .copy-icon {
 		display: none;
 	}
 }
