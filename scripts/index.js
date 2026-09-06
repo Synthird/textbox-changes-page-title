@@ -4,7 +4,7 @@ const title = document.querySelector("title"),
 	titleText = document.getElementById("title-text"),
 
 	textbox = document.getElementById("textbox"),
-	copyCodeButton = document.querySelector("button"),
+	copyCodeButton = document.getElementById("copy-button"),
 	copyIcon = document.querySelector(".copy-icon"),
 	copyNotify = document.getElementById("copy-notify"),
 	addFavicon = document.getElementById("add-favicon"),
