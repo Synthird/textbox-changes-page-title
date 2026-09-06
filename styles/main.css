@@ -93,6 +93,10 @@ button:active, div:has(label[for="add-favicon"]:active, input[type="file"]:activ
 
 /* Code block */
 
+code {
+	display: inline;
+}
+
 .tag {
 	color: rgb(255, 75, 75);
 }
