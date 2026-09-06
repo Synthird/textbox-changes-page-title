@@ -105,6 +105,7 @@ code {
 
 .copy-icon {
 	cursor: pointer;
+	border-radius: 0.12em;
 }
 
 .copy-icon:hover {
