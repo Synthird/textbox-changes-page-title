@@ -4,7 +4,7 @@ A textbox that changes the title of its webpage.
 
 ## Giving credit
 
-- Copy icon found in [Google's material design icons](https://fonts.google.com/icons).
+- The copy icon is found in the [material design icons by Google](https://fonts.google.com/icons).
 
 ## License
 
