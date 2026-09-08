@@ -51,10 +51,6 @@ a:active {
 	border: 2px solid;
 }
 
-div:has(label, .html-code-label) {
-	margin-bottom: 0.34em;
-}
-
 input[type="text"] {
 	font-family: monospace;
 	font-size: xx-large;
@@ -71,6 +67,16 @@ footer {
 	width: 100%;
 }
 
+/* Div */
+
+div:has(label, .html-code-label) {
+	margin-bottom: 0.34em;
+}
+
+div:has(button, input[type="file"]) {
+	margin-bottom: 1em;
+}
+
 /* Button */
 
 button, input[type="file"], ::file-selector-button {
@@ -80,7 +86,6 @@ button, input[type="file"], ::file-selector-button {
 button, ::file-selector-button {
 	background-color: rgb(61, 61, 61);
 	padding: 0.215em 0.5em;
-	margin-bottom: 1em;
 }
 
 button:hover, div:has(label[for="add-favicon"]:hover, input[type="file"]:hover) ::file-selector-button {
