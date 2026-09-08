@@ -74,12 +74,12 @@ footer {
 /* Button */
 
 button, input[type="file"], ::file-selector-button {
-	padding: 0.215em 0.5em;
 	font-size: large;
 }
 
 button, ::file-selector-button {
 	background-color: rgb(61, 61, 61);
+	padding: 0.215em 0.5em;
 	margin-bottom: 1em;
 }
 
